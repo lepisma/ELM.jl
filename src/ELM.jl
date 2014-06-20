@@ -1,5 +1,4 @@
 module ELM
-
-# package code goes here
-
-end # module
+	export ExtremeLearningMachine, fit!, predict
+	include("base.jl")
+end
