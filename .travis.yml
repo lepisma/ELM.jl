@@ -11,3 +11,4 @@ before_install:
 script:
   - julia -e 'Pkg.init(); run(`ln -s $(pwd()) $(Pkg.dir("ELM"))`); Pkg.pin("ELM"); Pkg.resolve()'
   - julia -e 'using ELM; @assert isdefined(:ELM); @assert typeof(ELM) === Module'
+  - julia ./test/runtests.jl
