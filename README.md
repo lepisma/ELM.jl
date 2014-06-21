@@ -4,7 +4,7 @@
 
 Extreme Learning Machine in julia
 
-Extreme Learning Machines [1] are a variant of Single-Hidden Layer Feedforward Networks (SLFNs) with a significant departure as their weights aren't iteratively tuning. Thus increasing the speed of neurals nets heavily.
+Extreme Learning Machines [1] are a variant of Single-Hidden Layer Feedforward Networks (SLFNs) with a significant departure as their weights aren't iteratively tuned. This boosts the speed of neurals nets heavily.
 
 **According to ELM theory:**
 
@@ -34,10 +34,10 @@ julia> predict(elm, X_test)
 
 ### References
 
-**[1]** G.-B. Huang, Q.-Y. Zhu, and C.-K. Siew, “Extreme Learning Machine: A New Learning Scheme of Feedforward Neural
-Networks,” Proc. Int’l Joint Conf.
+**[1]** G.-B. Huang, Q.-Y. Zhu, and C.-K. Siew, ï¿½Extreme Learning Machine: A New Learning Scheme of Feedforward Neural
+Networks,ï¿½ Proc. Intï¿½l Joint Conf.
 Neural Networks (IJCNN2004), vol. 2,
-IEEE, 2004, pp. 985–990.
+IEEE, 2004, pp. 985ï¿½990.
 
 ### License
 
