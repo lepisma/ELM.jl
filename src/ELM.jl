@@ -1,10 +1,12 @@
 module ELM
 
-	export ExtremeLearningMachine
+using Reexport
+@reexport using DataFrames
 
-	export fit!, predict
+export ExtremeLearningMachine
+export fit!, predict
 
-	# Base code
-	include("base.jl")
+# Base code
+include("base.jl")
 
 end
