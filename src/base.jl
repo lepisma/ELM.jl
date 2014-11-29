@@ -25,7 +25,7 @@ type ExtremeLearningMachine
 	# `hidden_layer` is the hidden layer inside this ELM
 	# `output_weights` is the weight matrix calculated during training
 	# `C` is the regularisation parameter that improves generalisation (not implemented as of now)
-
+    
 	hidden_layer::HiddenLayer
 	output_weights::Matrix{Float64}
 	C::Integer
@@ -46,7 +46,7 @@ end
 function sigmoid(x)
 	# Sigmoid activation
 
-	1 / (1 + exp(-x))
+	1 ./ (1 + exp(-x))
 end
 
 function find_activations(layer::HiddenLayer, x::Matrix{Float64})
@@ -70,7 +70,7 @@ function find_activations(layer::HiddenLayer, x::Matrix{Float64})
 	end
 	
 	act_matrix
-end
+end 
 
 function fit!(elm::ExtremeLearningMachine, x::Matrix{Float64}, y::Vector{Float64})
 	# Trains the elm using the given training data
