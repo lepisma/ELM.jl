@@ -26,10 +26,10 @@ julia> X_train = [1 1 1; 1 0 1; 0 0 0; 1 0 0]
 julia> Y_train = [1, 1, 0, 0]
 
 julia> elm = ExtremeLearningMachine(100) # number of nodes
-julia> fit!(elm, X_train, Y_train)
+julia> fit!(elm, float(X_train), float(Y_train))
 
 julia> X_test = [0 1 1; 0 1 0]
-julia> predict(elm, X_test)
+julia> predict(elm, float(X_test))
 ```
 
 ### References
