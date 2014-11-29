@@ -91,18 +91,6 @@ function fit!(elm::ExtremeLearningMachine, x::Matrix{Float64}, y::Vector{Float64
 	elm.output_weights = output_weights
 end
 
-function predict(elm::ExtremeLearningMachine, x::Vector{Float64})
-	# Predicts the output
-	#
-	# Parameters
-	# ----------
-	# `elm` the trained ELM
-	# `x` input data to predict (Vector)
-
-	act_matrix = find_activations(elm.hidden_layer, x')
-	elm.output_weights * act_matrix
-end
-
 function predict(elm::ExtremeLearningMachine, x::Matrix{Float64})
 	# Predicts the output
 	#
