@@ -34,10 +34,10 @@ julia> predict(elm, float(X_test))
 
 ### References
 
-**[1]** G.-B. Huang, Q.-Y. Zhu, and C.-K. Siew, �Extreme Learning Machine: A New Learning Scheme of Feedforward Neural
-Networks,� Proc. Int�l Joint Conf.
+**[1]** G.-B. Huang, Q.-Y. Zhu, and C.-K. Siew, "Extreme Learning Machine: A New Learning Scheme of Feedforward Neural
+Networks", Proc. Int. Joint Conf.
 Neural Networks (IJCNN2004), vol. 2,
-IEEE, 2004, pp. 985�990.
+IEEE, 2004, pp. 985-990.
 
 ### License
 
