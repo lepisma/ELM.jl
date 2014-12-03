@@ -124,5 +124,5 @@ function predict(elm::ExtremeLearningMachine,
     end
     
     act_matrix = find_activations(elm.hidden_layer, x_mat)
-    elm.output_weights * act_matrix
+    vec(elm.output_weights * act_matrix)
 end
