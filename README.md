@@ -15,21 +15,23 @@ Unlike conventional learning methods which MUST see the training data before gen
 
 ### Install
 
-`julia> Pkg.clone("git://github.com/lepisma/ELM.jl.git")`
+```julia
+Pkg.clone("git://github.com/lepisma/ELM.jl.git")
+```
 
 ### Usage
 
-```
-julia> using ELM
+```julia
+using ELM
 
-julia> X_train = [1 1 1; 1 0 1; 0 0 0; 1 0 0]
-julia> Y_train = [1, 1, 0, 0]
+X_train = [1 1 1; 1 0 1; 0 0 0; 1 0 0]
+Y_train = [1, 1, 0, 0]
 
-julia> elm = ExtremeLearningMachine(100) # number of nodes
-julia> fit!(elm, float(X_train), float(Y_train))
+elm = ExtremeLearningMachine(100) # number of nodes
+fit!(elm, float(X_train), float(Y_train))
 
-julia> X_test = [0 1 1; 0 1 0]
-julia> predict(elm, float(X_test))
+X_test = [0 1 1; 0 1 0]
+predict(elm, float(X_test))
 ```
 
 ### References
@@ -39,6 +41,4 @@ Networks", Proc. Int. Joint Conf.
 Neural Networks (IJCNN2004), vol. 2,
 IEEE, 2004, pp. 985-990.
 
-### License
-
-MIT
+**License** MIT
